@@ -94,7 +94,7 @@ const AssetsList = () => {
       fontSize: fontSizes.lg,
       fontWeight: "bold",
       color: colors.text,
-      marginBottom: spacing.lg,
+      paddingTop: spacing.md,
     },
     assetItem: {
       flexDirection: "row",
@@ -119,7 +119,8 @@ const AssetsList = () => {
     logoImage: {
       width: 32,
       height: 32,
-      borderRadius: radius.md,
+      borderRadius: radius.full,
+      resizeMode: "contain",
     },
     assetInfo: {
       flex: 1,

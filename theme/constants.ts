@@ -21,7 +21,7 @@ export const lightColors: ColorPalette = {
   background: "#ffffff",
   backgroundSecondary: "#f8fafc",
   backgroundTertiary: "#f1f5f9",
-  surface: "#ffffff",
+  surface: "#EBEBEB",
   surfaceSecondary: "#f8fafc",
 
   // Text colors

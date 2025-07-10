@@ -27,7 +27,7 @@ export const HomeIcon = ({size = 24, color = "red", brandColor = "blue"}) => {
 // StakeIcon
 export const StakeIcon = ({size = 24, color = "red", brandColor = "blue"}) => {
   return (
-    <Svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
+    <Svg width={size} height={size} viewBox='0 0 24 24' fill='none'>
       <Path
         d='M8.31982 15.27L14.8598 8.72998'
         stroke={brandColor}
@@ -111,7 +111,7 @@ export const RewardIcon = ({size = 24, color = "red", brandColor = "blue"}) => {
 // MineIcon
 export const MineIcon = ({size = 24, color = "red", brandColor = "blue"}) => {
   return (
-    <Svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
+    <Svg width={size} height={size} viewBox='0 0 24 24' fill='none'>
       <Path
         d='M7.61301 4.604C9.34901 2.868 10.217 2 11.295 2C12.374 2 13.242 2.868 14.977 4.604L19.397 9.023C21.131 10.758 22 11.626 22 12.705C22 13.784 21.132 14.651 19.396 16.387C17.66 18.123 16.792 18.991 15.714 18.991C14.635 18.991 13.767 18.123 12.032 16.387L7.61201 11.968C5.87801 10.233 5.01001 9.365 5.01001 8.286C5.01001 7.207 5.87701 6.34 7.61301 4.604Z'
         stroke={color}
@@ -151,6 +151,46 @@ export const ProfileIcon = ({
       <Path
         d='M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z'
         stroke={color}
+        strokeWidth='1.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </Svg>
+  );
+};
+
+// HistoryIcon
+export const HistoryIcon = ({
+  size = 24,
+  color = "red",
+  brandColor = "blue",
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox='0 0 24 25' fill='none'>
+      <Path
+        d='M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14'
+        stroke={color}
+        strokeWidth='1.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <Path
+        d='M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z'
+        stroke={color}
+        strokeWidth='1.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <Path
+        d='M7 13.5H13'
+        stroke={brandColor}
+        strokeWidth='1.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <Path
+        d='M7 17.5H11'
+        stroke={brandColor}
         strokeWidth='1.5'
         strokeLinecap='round'
         strokeLinejoin='round'

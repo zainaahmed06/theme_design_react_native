@@ -1,9 +1,9 @@
 import {useTheme} from "@/theme";
 import React from "react";
-import {Text, View} from "react-native";
+import {Button, Text, View} from "react-native";
 
 const Profile = () => {
-  const {colors} = useTheme();
+  const {colors, isDark, toggleTheme} = useTheme();
   return (
     <View
       style={{
@@ -13,6 +13,10 @@ const Profile = () => {
         alignItems: "center",
       }}>
       <Text style={{color: colors.text}}>Profile</Text>
+      <Button
+        onPress={toggleTheme}
+        title={isDark ? "Light Mode" : "Dark Mode"}
+      />
     </View>
   );
 };

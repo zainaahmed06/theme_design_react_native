@@ -64,3 +64,80 @@ export const BellIcon = ({size = 24, color = "red"}) => {
     </Svg>
   );
 };
+
+// Bullish Bearish Icon
+
+export const UpDownIcon = ({size = 24, color = "red"}) => {
+  return (
+    <Svg width={size} height={size} viewBox='0 0 16 17' fill='none'>
+      <Path
+        d='M12.4533 9.81999L10.3133 7.67999L9.00667 6.36666C8.45333 5.81333 7.55333 5.81333 7 6.36666L3.54667 9.81999C3.09333 10.2733 3.42 11.0467 4.05333 11.0467H7.79333H11.9467C12.5867 11.0467 12.9067 10.2733 12.4533 9.81999Z'
+        fill={color}
+      />
+    </Svg>
+  );
+};
+
+// WithdrawDepositIcon
+export const WithdrawDepositIcon = ({
+  size = 24,
+  color = "red",
+  brandColor = "blue",
+  rotation = 0,
+}) => {
+  return (
+    <Svg
+      rotation={rotation}
+      width={size}
+      height={size}
+      viewBox='0 0 24 25'
+      fill='none'>
+      <Path
+        d='M12 2.5C6.48 2.5 2 6.98 2 12.5C2 18.02 6.48 22.5 12 22.5C17.52 22.5 22 18.02 22 12.5'
+        stroke={color}
+        strokeWidth='1.5'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <Path
+        d='M22.0008 2.5L13.8008 10.7'
+        stroke={brandColor}
+        strokeWidth='1.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <Path
+        d='M13 6.66992V11.4999H17.83'
+        stroke={brandColor}
+        strokeWidth='1.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </Svg>
+  );
+};
+
+// MoreIcon
+export const MoreIcon = ({size = 24, color = "red", brandColor = "blue"}) => {
+  return (
+    <Svg width={size} height={size} viewBox='0 0 24 25' fill='none'>
+      <Path
+        d='M17.54 9.31014C19.1748 9.31014 20.5 7.9849 20.5 6.35014C20.5 4.71537 19.1748 3.39014 17.54 3.39014C15.9052 3.39014 14.58 4.71537 14.58 6.35014C14.58 7.9849 15.9052 9.31014 17.54 9.31014Z'
+        fill={color}
+      />
+      <Path
+        d='M6.46 9.31014C8.09476 9.31014 9.42 7.9849 9.42 6.35014C9.42 4.71537 8.09476 3.39014 6.46 3.39014C4.82524 3.39014 3.5 4.71537 3.5 6.35014C3.5 7.9849 4.82524 9.31014 6.46 9.31014Z'
+        fill={brandColor}
+      />
+      <Path
+        d='M17.54 21.6099C19.1748 21.6099 20.5 20.2847 20.5 18.6499C20.5 17.0152 19.1748 15.6899 17.54 15.6899C15.9052 15.6899 14.58 17.0152 14.58 18.6499C14.58 20.2847 15.9052 21.6099 17.54 21.6099Z'
+        fill={brandColor}
+      />
+      <Path
+        d='M6.46 21.6099C8.09476 21.6099 9.42 20.2847 9.42 18.6499C9.42 17.0152 8.09476 15.6899 6.46 15.6899C4.82524 15.6899 3.5 17.0152 3.5 18.6499C3.5 20.2847 4.82524 21.6099 6.46 21.6099Z'
+        fill={color}
+      />
+    </Svg>
+  );
+};

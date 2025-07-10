@@ -1,35 +1,19 @@
-import {
-  HomeIcon,
-  MineIcon,
-  ProfileIcon,
-  RewardIcon,
-  StakeIcon,
-} from "@/constants/TabsIcons";
+import HomeHeader from "@/components/design/HomeHeader";
 import {useTheme} from "@/theme";
 import React from "react";
-import {Button, Text, View} from "react-native";
+import {SafeAreaView} from "react-native-safe-area-context";
 
 const Home = () => {
-  const {colors, toggleTheme, isDark} = useTheme();
+  const {colors, spacing} = useTheme();
   return (
-    <View
+    <SafeAreaView
       style={{
         flex: 1,
         backgroundColor: colors.background,
-        justifyContent: "center",
-        alignItems: "center",
+        paddingHorizontal: spacing.sm,
       }}>
-      <Text style={{color: colors.text}}>Mine</Text>
-      <Button
-        onPress={toggleTheme}
-        title={isDark ? "Light Mode" : "Dark Mode"}
-      />
-      <HomeIcon color={colors.textTertiary} brandColor={colors.primary} />
-      <StakeIcon color={colors.textTertiary} brandColor={colors.primary} />
-      <RewardIcon color={colors.textTertiary} brandColor={colors.primary} />
-      <MineIcon color={colors.textTertiary} brandColor={colors.primary} />
-      <ProfileIcon color={colors.textTertiary} brandColor={colors.primary} />
-    </View>
+      <HomeHeader />
+    </SafeAreaView>
   );
 };
 

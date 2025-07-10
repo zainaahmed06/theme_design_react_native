@@ -118,7 +118,7 @@ export const radius: RadiusScale = {
 
 // Responsive font size scale
 export const fontSizes: FontSizeScale = {
-  xxs: wp("2.5%"), // ~10px
+  xxs: wp("2.5%"), // ~8px
   xs: wp("3%"), // ~12px
   sm: wp("3.5%"), // ~14px
   md: wp("4%"), // ~16px

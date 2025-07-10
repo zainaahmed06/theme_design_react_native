@@ -10,7 +10,7 @@ import {Tabs} from "expo-router";
 import React from "react";
 
 const TabsLayout = () => {
-  const {colors} = useTheme();
+  const {colors, fontSizes} = useTheme();
   return (
     <Tabs
       screenOptions={{
@@ -24,6 +24,9 @@ const TabsLayout = () => {
           borderTopWidth: 0,
           shadowOpacity: 0,
           shadowColor: colors.background,
+        },
+        tabBarLabelStyle: {
+          fontSize: fontSizes.xxs,
         },
       }}>
       <Tabs.Screen

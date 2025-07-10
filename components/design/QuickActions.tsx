@@ -98,7 +98,7 @@ const QuickActions = () => {
       width: 48,
       height: 48,
       borderRadius: radius.md,
-      backgroundColor: colors.surface,
+      backgroundColor: colors.surfaceSecondary,
       borderWidth: 1,
       borderColor: colors.border,
       justifyContent: "center",

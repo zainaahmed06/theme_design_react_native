@@ -19,7 +19,7 @@ const HomeHeader = () => {
       <TextInput
         placeholder='Search...'
         style={{
-          backgroundColor: colors.surface,
+          backgroundColor: colors.surfaceSecondary,
           flex: 1,
           marginHorizontal: 16,
           borderRadius: 20,

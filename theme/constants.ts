@@ -66,7 +66,7 @@ export const darkColors: ColorPalette = {
   backgroundSecondary: "#1e293b",
   backgroundTertiary: "#334155",
   surface: "#1e293b",
-  surfaceSecondary: "#334155",
+  surfaceSecondary: "#171F33",
 
   // Text colors
   text: "#f8fafc",

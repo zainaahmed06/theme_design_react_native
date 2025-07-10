@@ -49,7 +49,7 @@ const Home = () => {
             tintColor={colors.primary} // iOS
             title='Pull to refresh' // iOS
             titleColor={colors.textSecondary} // iOS
-            progressBackgroundColor={colors.surface} // Android
+            progressBackgroundColor={colors.surfaceSecondary} // Android
           />
         }>
         <BalanceCard balance={2093} />

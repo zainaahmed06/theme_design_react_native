@@ -33,8 +33,11 @@ const TabsLayout = () => {
         name='index'
         options={{
           title: "Home",
-          tabBarIcon: ({color}) => (
-            <HomeIcon color={colors.textTertiary} brandColor={color} />
+          tabBarIcon: ({color, focused}) => (
+            <HomeIcon
+              color={focused ? colors.text : colors.textTertiary}
+              brandColor={color}
+            />
           ),
         }}
       />
@@ -42,8 +45,11 @@ const TabsLayout = () => {
         name='stake'
         options={{
           title: "Stake",
-          tabBarIcon: ({color}) => (
-            <StakeIcon color={colors.textTertiary} brandColor={color} />
+          tabBarIcon: ({color, focused}) => (
+            <StakeIcon
+              color={focused ? colors.text : colors.textTertiary}
+              brandColor={color}
+            />
           ),
         }}
       />
@@ -51,8 +57,11 @@ const TabsLayout = () => {
         name='rewards'
         options={{
           title: "Rewards",
-          tabBarIcon: ({color}) => (
-            <RewardIcon color={colors.textTertiary} brandColor={color} />
+          tabBarIcon: ({color, focused}) => (
+            <RewardIcon
+              color={focused ? colors.text : colors.textTertiary}
+              brandColor={color}
+            />
           ),
         }}
       />
@@ -60,8 +69,11 @@ const TabsLayout = () => {
         name='mine'
         options={{
           title: "Mine",
-          tabBarIcon: ({color}) => (
-            <MineIcon color={colors.textTertiary} brandColor={color} />
+          tabBarIcon: ({color, focused}) => (
+            <MineIcon
+              color={focused ? colors.text : colors.textTertiary}
+              brandColor={color}
+            />
           ),
         }}
       />
@@ -69,8 +81,11 @@ const TabsLayout = () => {
         name='profile'
         options={{
           title: "Profile",
-          tabBarIcon: ({color}) => (
-            <ProfileIcon color={colors.textTertiary} brandColor={color} />
+          tabBarIcon: ({color, focused}) => (
+            <ProfileIcon
+              color={focused ? colors.text : colors.textTertiary}
+              brandColor={color}
+            />
           ),
         }}
       />

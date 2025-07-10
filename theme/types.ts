@@ -1,4 +1,4 @@
-export type ThemeMode = 'light' | 'dark';
+export type ThemeMode = "light" | "dark";
 
 export interface ColorPalette {
   // Primary colors for crypto app
@@ -8,20 +8,20 @@ export interface ColorPalette {
   secondary: string;
   secondaryLight: string;
   secondaryDark: string;
-  
+
   // Background colors
   background: string;
   backgroundSecondary: string;
   backgroundTertiary: string;
   surface: string;
   surfaceSecondary: string;
-  
+
   // Text colors
   text: string;
   textSecondary: string;
   textTertiary: string;
   textInverse: string;
-  
+
   // Status colors for crypto trading
   success: string;
   successLight: string;
@@ -31,23 +31,16 @@ export interface ColorPalette {
   warningLight: string;
   info: string;
   infoLight: string;
-  
+
   // Crypto specific colors
   bull: string; // Green for price increases
   bear: string; // Red for price decreases
   neutral: string; // Gray for no change
-  
+
   // Border and divider colors
   border: string;
   borderSecondary: string;
   divider: string;
-  
-  // Chart colors
-  chartPositive: string;
-  chartNegative: string;
-  chartNeutral: string;
-  chartGrid: string;
-  chartBackground: string;
 }
 
 export interface SpacingScale {
@@ -70,6 +63,7 @@ export interface RadiusScale {
 }
 
 export interface FontSizeScale {
+  xxs: number;
   xs: number;
   sm: number;
   md: number;
@@ -82,28 +76,28 @@ export interface FontSizeScale {
 export interface ShadowStyles {
   small: {
     shadowColor: string;
-    shadowOffset: { width: number; height: number };
+    shadowOffset: {width: number; height: number};
     shadowOpacity: number;
     shadowRadius: number;
     elevation: number;
   };
   medium: {
     shadowColor: string;
-    shadowOffset: { width: number; height: number };
+    shadowOffset: {width: number; height: number};
     shadowOpacity: number;
     shadowRadius: number;
     elevation: number;
   };
   large: {
     shadowColor: string;
-    shadowOffset: { width: number; height: number };
+    shadowOffset: {width: number; height: number};
     shadowOpacity: number;
     shadowRadius: number;
     elevation: number;
   };
   card: {
     shadowColor: string;
-    shadowOffset: { width: number; height: number };
+    shadowOffset: {width: number; height: number};
     shadowOpacity: number;
     shadowRadius: number;
     elevation: number;

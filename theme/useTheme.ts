@@ -1,8 +1,8 @@
-import { useThemeStore } from './store';
+import {useThemeStore} from "./store";
 
 /**
  * Custom hook for accessing the theme system
- * 
+ *
  * @returns Object containing:
  * - colors: Color palette for the current theme
  * - spacing: Responsive spacing scale
@@ -14,12 +14,7 @@ import { useThemeStore } from './store';
  * - toggleTheme: Function to toggle between light and dark modes
  */
 export const useTheme = () => {
-  const {
-    theme,
-    themeMode,
-    setThemeMode,
-    toggleTheme,
-  } = useThemeStore();
+  const {theme, themeMode, setThemeMode, toggleTheme} = useThemeStore();
 
   return {
     // Theme properties
@@ -28,19 +23,19 @@ export const useTheme = () => {
     radius: theme.radius,
     fontSizes: theme.fontSizes,
     shadows: theme.shadows,
-    
+
     // Theme mode management
     themeMode,
     setThemeMode,
     toggleTheme,
-    
+
     // Utility functions
-    isDark: themeMode === 'dark',
-    isLight: themeMode === 'light',
-    
+    isDark: themeMode === "dark",
+    isLight: themeMode === "light",
+
     // Helper function to get spacing values
     getSpacing: (multiplier: number = 1) => theme.spacing.md * multiplier,
-    
+
     // Helper function to create custom shadows
     createShadow: (
       color: string = theme.colors.text,
@@ -49,7 +44,7 @@ export const useTheme = () => {
       elevation: number = 3
     ) => ({
       shadowColor: color,
-      shadowOffset: { width: 0, height: 2 },
+      shadowOffset: {width: 0, height: 2},
       shadowOpacity: opacity,
       shadowRadius: radius,
       elevation,

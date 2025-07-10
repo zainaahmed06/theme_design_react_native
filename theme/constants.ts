@@ -49,13 +49,6 @@ export const lightColors: ColorPalette = {
   border: "#e2e8f0",
   borderSecondary: "#cbd5e1",
   divider: "#e2e8f0",
-
-  // Chart colors
-  chartPositive: "#16a34a",
-  chartNegative: "#dc2626",
-  chartNeutral: "#6b7280",
-  chartGrid: "#e2e8f0",
-  chartBackground: "#ffffff",
 };
 
 // Dark theme colors
@@ -100,13 +93,6 @@ export const darkColors: ColorPalette = {
   border: "#374151",
   borderSecondary: "#4b5563",
   divider: "#374151",
-
-  // Chart colors
-  chartPositive: "#22c55e",
-  chartNegative: "#f87171",
-  chartNeutral: "#9ca3af",
-  chartGrid: "#374151",
-  chartBackground: "#1e293b",
 };
 
 // Responsive spacing scale
@@ -132,6 +118,7 @@ export const radius: RadiusScale = {
 
 // Responsive font size scale
 export const fontSizes: FontSizeScale = {
+  xxs: wp("2.5%"), // ~10px
   xs: wp("3%"), // ~12px
   sm: wp("3.5%"), // ~14px
   md: wp("4%"), // ~16px

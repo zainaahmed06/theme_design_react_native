@@ -1,18 +1,17 @@
 import {useTheme} from "@/theme";
-import * as NavigationBar from "expo-navigation-bar";
 import {Stack} from "expo-router";
-import {useEffect} from "react";
+import {StatusBar} from "react-native";
 
 export default function RootLayout() {
-  const {colors} = useTheme();
+  const {colors, isDark} = useTheme();
 
-  useEffect(() => {
-    // Set the navigation bar color
-    NavigationBar.setBackgroundColorAsync("#FF0000"); // Red color
-
-    // Optional: Control icon brightness (light/dark)
-    NavigationBar.setButtonStyleAsync("dark"); // or 'light'
-  }, []);
-
-  return <Stack screenOptions={{headerShown: false}} />;
+  return (
+    <>
+      <StatusBar
+        backgroundColor={colors.background}
+        barStyle={isDark ? "light-content" : "dark-content"}
+      />
+      <Stack screenOptions={{headerShown: false}} />
+    </>
+  );
 }
